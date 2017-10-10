@@ -6,7 +6,7 @@ ENV container docker
 
 # Install updates
 RUN yum install -y https://dl.fedoraproject.org/pub/epel/epel-release-latest-7.noarch.rpm
-RUN yum install -y httpd supervisor mod_ssl
+RUN yum install -y httpd supervisor mod_ssl logrotate
 RUN yum update -y
 RUN yum clean all
 
